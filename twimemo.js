@@ -22,9 +22,7 @@ var text;
 userTimeLine.on("tweet",function(tweet){
 	if(tweet.user.screen_name == TwitterName){
 		text = tweet.text.replace(/#じゅんメモ/,""); //ここにもハッシュタグを登録しておこう！
-		ds.stream().next(function(err,data){
-			ds.push({memo: text,done: false});
-		});
+                ds.push({memo: text,done: false});
 	}
 });
 app.get("/",function(req,res){
