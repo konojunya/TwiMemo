@@ -1,0 +1,21 @@
+{
+  "name": "twimemo",
+  "version": "1.0.0",
+  "description": "ハッシュタグを拾ってメモにストックします。",
+  "main": "twimemo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node twimemo.js"
+  },
+  "keywords": [
+    "twitter",
+    "memo"
+  ],
+  "author": "konojunya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "milkcocoa": "^0.5.1",
+    "twit": "^2.2.4"
+  }
+}
